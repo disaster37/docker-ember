@@ -3,7 +3,7 @@ MAINTAINER Sebastien LANGOUREAUX (linuxworkgroup@hotmail.com)
 
 
 # Install extra package
-RUN apk --update add fping curl bash &&\
+RUN apk --update add fping curl bash git &&\
     rm -rf /var/cache/apk/*
 
 # Install ember
