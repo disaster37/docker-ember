@@ -8,3 +8,5 @@ RUN apk --update add fping curl bash &&\
 
 # Install ember
 RUN npm install -g async watchman bower phantomjs-prebuilt ember-cli@2.14.1
+
+USER node
