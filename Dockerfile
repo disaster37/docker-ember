@@ -9,7 +9,7 @@ RUN echo http://dl-2.alpinelinux.org/alpine/edge/community/ >> /etc/apk/reposito
     rm -rf /var/cache/apk/*
 
 # Install ember
-RUN npm install -g async watchman bower phantomjs-prebuilt ember-cli@2.13.3 silent-error esprima-fb
+RUN npm install -g async watchman bower phantomjs-prebuilt silent-error esprima-fb ember-cli@2.13.3
 
 # Change UID to build ember project with the same righ as dev user
 RUN usermod -u ${UID} node
