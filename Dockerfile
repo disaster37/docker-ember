@@ -5,7 +5,7 @@ ENV UID 1001
 
 # Install extra package
 RUN echo http://dl-2.alpinelinux.org/alpine/edge/community/ >> /etc/apk/repositories &&\
-    apk --update add fping curl bash git shadow &&\
+    apk --update add fping curl bash git shadow xvfb chromium &&\
     rm -rf /var/cache/apk/*
 
 # Install ember
